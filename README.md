@@ -2,7 +2,8 @@
 
 🌍 **[ English ](#-english)** | **[ Українська ](#-українська)** | **[ Русский ](#-русский)**
 ---
-<img width="686" height="419" alt="image" src="https://github.com/user-attachments/assets/927a5232-49f3-497b-b958-7c3d4d23252d" />
+<img width="686" height="416" alt="image" src="https://github.com/user-attachments/assets/84160cdb-7f2b-43c0-bee5-69d051ae7331" />
+
 
 ---
 
