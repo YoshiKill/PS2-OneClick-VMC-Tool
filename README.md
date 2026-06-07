@@ -1,6 +1,7 @@
 # PS2 VMC One-Click Creator 🎮💾
 
 🌍 **[ English ](#-english)** | **[ Українська ](#-українська)** | **[ Русский ](#-русский)**
+---
 <img width="686" height="419" alt="image" src="https://github.com/user-attachments/assets/927a5232-49f3-497b-b958-7c3d4d23252d" />
 
 ---
