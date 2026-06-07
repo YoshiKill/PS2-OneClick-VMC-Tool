@@ -3,6 +3,7 @@ import os
 import re
 import threading
 import time
+import shutil
 import tkinter as tk
 import webbrowser
 from tkinter import filedialog, messagebox
@@ -46,7 +47,6 @@ class PS2VmcApp:
         self.spoiler_expanded = False
         
         # Константы для логики PS2
-        self.VMC_SIZE = 8 * 1024 * 1024
         self.ID_PATTERN = re.compile(b'[A-Z]{4}_[0-9]{3}\.[0-9]{2}')
         
         # Цвета в стиле PS2
@@ -247,6 +247,14 @@ class PS2VmcApp:
         threading.Thread(target=self.process_core, daemon=True).start()
 
     def process_core(self):
+        # 1. Проверяем наличие шаблона перед стартом магии
+        template_path = resource_path("template_8mb.bin")
+        if not os.path.exists(template_path):
+            self.log("[-] КРИТИЧЕСКАЯ ОШИБКА: Файл 'template_8mb.bin' не найден!")
+            messagebox.showerror("Ошибка", "Файл шаблона 'template_8mb.bin' не найден рядом с программой. Поместите его в папку и перезапустите!")
+            self.is_running = False
+            return
+
         base_dir = os.path.dirname(self.selected_path)
         vmc_dir = os.path.join(base_dir, "VMC")
         cfg_dir = os.path.join(base_dir, "CFG")
@@ -284,14 +292,14 @@ class PS2VmcApp:
 
             self.log(f"[+] Обработка: {game_id} -> {iso_file}")
 
-            # Создание VMC
+            # --- ОБНОВЛЕНО: Создание VMC копированием шаблона ---
             vmc_path = os.path.join(vmc_dir, f"{game_id}_0.bin")
             if not os.path.exists(vmc_path):
-                with open(vmc_path, 'wb') as f:
-                    f.write(b'\x00' * self.VMC_SIZE)
-                self.log(f"    -> Создан файл VMC картриджа.")
+                shutil.copyfile(template_path, vmc_path)
+                self.log(f"    -> Карта успешно скопирована из шаблона.")
             else:
                 self.log(f"    -> Карта памяти уже существовала.")
+            # ----------------------------------------------------
 
             # Запись CFG
             cfg_path = os.path.join(cfg_dir, f"{game_id}.cfg")
