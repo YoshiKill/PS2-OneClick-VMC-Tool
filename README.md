@@ -1,4 +1,4 @@
-# PS2 VMC One-Click Tool 🎮💾
+# PS2 One-Click VMC Creation Tool 🎮💾
 
 🌍 **[ English ](#-english)** | **[ Українська ](#-українська)** | **[ Русский ](#-русский)**
 ---
@@ -8,7 +8,7 @@
 
 ## 🇬🇧 English
 
-**PS2 VMC One-Click Tool** is a standalone, retro-styled utility designed for the PlayStation 2 homebrew community. It solves the tedious problem of manually creating Virtual Memory Cards (VMCs) for large game libraries in Open PS2 Loader (OPL).
+**PS2 One-Click VMC Creation Tool** is a standalone, retro-styled utility designed for the PlayStation 2 homebrew community. It solves the tedious problem of manually creating Virtual Memory Cards (VMCs) for large game libraries in Open PS2 Loader (OPL).
 
 If you are using a modern **exFAT HDD** setup with dozens or hundreds of `.iso` backups, this tool will save you hours of menu navigation by generating perfectly configured VMCs for your entire library in a single click.
 
@@ -31,7 +31,7 @@ Unlike other tools, you don't need to rename your `.iso` files to include Game I
 
 ## 🇺🇦 Українська
 
-**PS2 VMC One-Click Tool** — це автономна утиліта в ретро-стилі, створена для homebrew-спільноти PlayStation 2. Вона вирішує проблему ручного створення віртуальних карт пам'яті (VMC) для великих бібліотек ігор в Open PS2 Loader (OPL).
+**PS2 One-Click VMC Creation Tool** — це автономна утиліта в ретро-стилі, створена для homebrew-спільноти PlayStation 2. Вона вирішує проблему ручного створення віртуальних карт пам'яті (VMC) для великих бібліотек ігор в Open PS2 Loader (OPL).
 
 Якщо ви використовуєте сучасну збірку з **exFAT HDD** та десятками або сотнями `.iso` образів, цей інструмент заощадить вам години блукань по меню, згенерувавши ідеально налаштовані VMC для всієї вашої бібліотеки в один клік.
 
@@ -54,7 +54,7 @@ Unlike other tools, you don't need to rename your `.iso` files to include Game I
 
 ## 🇷🇺 Русский
 
-**PS2 VMC One-Click Tool** — это автономная утилита в ретро-стиле, созданная для homebrew-сообщества PlayStation 2. Она решает нудную проблему ручного создания виртуальных карт памяти (VMC) для больших библиотек игр в Open PS2 Loader (OPL).
+**PS2 One-Click VMC Creation Tool** — это автономная утилита в ретро-стиле, созданная для homebrew-сообщества PlayStation 2. Она решает нудную проблему ручного создания виртуальных карт памяти (VMC) для больших библиотек игр в Open PS2 Loader (OPL).
 
 Если вы используете современную сборку с **exFAT HDD** и десятками или сотнями `.iso` образов, этот инструмент сэкономит вам часы ползания по менюшкам, сгенерировав идеально настроенные VMC для всей вашей библиотеки в один клик.
 
